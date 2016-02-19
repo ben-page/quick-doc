@@ -1,7 +1,7 @@
 'use strict';
 var util = require('util');
 
-//line comment
+//extra comment
 
 /**
  * JSDOC comment
@@ -10,9 +10,9 @@ var util = require('util');
 function test(object) {
     console.log(util.inspect(object));
 
-    //it's important that blocks are propertly detected
+    //line comment
     for (var i = 0; i < 100; i++) {
-        console.log(i); //inline comment
+        console.log(i);
     }
 
     //even if
@@ -30,3 +30,5 @@ function test(object) {
 block comment
  */
 test(util);
+
+var t = 0;

@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-grow: 1;
+}
+
+#index {
+    min-width: 20%;
+    padding: 0.5em;
+}
+
+#comments {
+    background-color: #f8f8f8;
+    min-width: 40%;
+    padding: 0.5em;
+}
+
+#code {
+    min-width: 40%;
+    padding: 0.5em;
+}
+
+.comment {
+    background-color: #eeeeee;
+    width: 100%;
+    display: inline-block;
+}
