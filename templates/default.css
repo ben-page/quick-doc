@@ -3,8 +3,8 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 0.9em;
+    line-height: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -25,12 +25,12 @@ html, body {
 
 #comments {
     background-color: #f8f8f8;
-    min-width: 40%;
+    min-width: 30%;
     padding: 0.5em;
 }
 
 #code {
-    min-width: 40%;
+    min-width: 50%;
     padding: 0.5em;
 }
 
