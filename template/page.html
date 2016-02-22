@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{=it.title}}</title>
+    <link href='{{=it.rootPath}}/css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='{{=it.rootPath}}/css/darkula.css' rel='stylesheet' type='text/css'>
+    <link href='{{=it.rootPath}}/css/default.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>{{=it.title}}</header>
+<div id="content">
+    <div id="index">{{=it.toc}}</div>
+    <div id="code"><div id="table">
+        {{~it.lines :lines:index}}
+        <div class="table-row"><div class="comment{{? !lines.comment }} blank{{?}}">{{=lines.comment || '&nbsp;'}}</div><div class="code">{{=lines.code || '&nbsp;'}}</div></div>
+        {{~}}
+    </div></div>
+</div>
+<footer>{{=it.footer || '&nbsp;'}}</footer>
+</body>
+</html>

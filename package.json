@@ -2,14 +2,20 @@
   "name": "doc-me",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/doc.js",
+  "bin": {
+    "eloc-ctl": "bin/eloc-ctl"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.9.0",
+    "dot": "^1.0.3",
     "highlight.js": "^9.1.0",
+    "micromatch": "^2.3.7",
     "normalizecss": "^3.0.0"
   }
 }
