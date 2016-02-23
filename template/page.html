@@ -12,11 +12,21 @@
 <div id="content">
     <div id="index">{{=it.toc}}</div>
     <div id="code"><div id="table">
-        {{~it.lines :lines:index}}
-        <div class="table-row"><div class="comment{{? !lines.comment }} blank{{?}}">{{=lines.comment || '&nbsp;'}}</div><div class="code">{{=lines.code || '&nbsp;'}}</div></div>
+        {{~it.lines :line:index}}
+        <div class="table-row">
+            {{? line.comment === null }}
+                <div class="comment blank">&nbsp;</div>
+            {{??}}
+                <div class="comment">{{=line.comment}}</div>
+            {{?}}
+            <div class="lineNo">{{=line.lineNo || '&nbsp;'}}</div>
+            <div class="code">{{=line.code || '&nbsp;'}}</div>
+        </div>
         {{~}}
     </div></div>
 </div>
-<footer>{{=it.footer || '&nbsp;'}}</footer>
+{{? it.footer }}
+    <footer>{{=it.footer}}</footer>
+{{?}}
 </body>
 </html>
