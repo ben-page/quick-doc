@@ -1,19 +1,19 @@
 {
-  "name": "doc-me",
+  "name": "quick-doc",
   "version": "1.0.0",
-  "description": "",
-  "main": "./lib/doc.js",
+  "description": "Quickly generate HTML documentation for your JS.",
+  "main": "./lib/document.js",
   "bin": {
-    "eloc-ctl": "bin/eloc-ctl"
+    "eloc-ctl": "bin/quickdoc"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Ben Page <ben.page@openreign.com>",
+  "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.3.1",
     "commander": "^2.9.0",
-    "dot": "^1.0.3",
+    "dustjs-helpers": "^1.7.3",
+    "dustjs-linkedin": "^2.7.2",
+    "esprima": "^2.7.2",
     "highlight.js": "^9.1.0",
     "micromatch": "^2.3.7",
     "normalizecss": "^3.0.0"

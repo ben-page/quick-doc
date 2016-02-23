@@ -2,31 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{=it.title}}</title>
-    <link href='{{=it.rootPath}}/css/normalize.css' rel='stylesheet' type='text/css'>
-    <link href='{{=it.rootPath}}/css/darkula.css' rel='stylesheet' type='text/css'>
-    <link href='{{=it.rootPath}}/css/default.css' rel='stylesheet' type='text/css'>
+    <title>{title}</title>
+    <link href='{rootPath}/css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='{rootPath}/css/darkula.css' rel='stylesheet' type='text/css'>
+    <link href='{rootPath}/css/default.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<header>{{=it.title}}</header>
+<header>{title}</header>
 <div id="content">
-    <div id="index">{{=it.toc}}</div>
+    <div id="index">{toc|s}</div>
     <div id="code"><div id="table">
-        {{~it.lines :line:index}}
+        {#lines}
         <div class="table-row">
-            {{? line.comment === null }}
+            {^comments}
                 <div class="comment blank">&nbsp;</div>
-            {{??}}
-                <div class="comment">{{=line.comment}}</div>
-            {{?}}
-            <div class="lineNo">{{=line.lineNo || '&nbsp;'}}</div>
-            <div class="code">{{=line.code || '&nbsp;'}}</div>
+            {/comments}
+            {?comments}
+                <div class="comment">
+                {#comments}
+                    <span class="comment-{type}">{value|s}</span>
+                    {@sep}<br>{/sep}
+                {/comments}
+                </div>
+            {/comments}
+            <div class="lineNo">{lineNo}</div>
+            <div class="code">{code|s}</div>
         </div>
-        {{~}}
+        {/lines}
     </div></div>
 </div>
-{{? it.footer }}
-    <footer>{{=it.footer}}</footer>
-{{?}}
+{^footer}
+    <footer>{footer|s}</footer>
+{/footer}
 </body>
 </html>
