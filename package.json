@@ -1,6 +1,6 @@
 {
   "name": "quick-doc",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Quickly generate HTML documentation for your JS.",
   "main": "./lib/document.js",
   "bin": {
