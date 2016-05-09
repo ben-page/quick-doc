@@ -11,6 +11,7 @@
   "dependencies": {
     "bluebird": "^3.3.1",
     "commander": "^2.9.0",
+    "doctrine": "^1.2.0",
     "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.2",
     "esprima": "^2.7.2",
