@@ -1,10 +1,10 @@
 {
   "name": "quick-doc",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Quickly generate HTML documentation for your JS.",
   "main": "./lib/document.js",
   "bin": {
-    "eloc-ctl": "bin/quickdoc"
+    "quickdoc": "bin/quickdoc"
   },
   "author": "Ben Page <ben.page@openreign.com>",
   "license": "MIT",
