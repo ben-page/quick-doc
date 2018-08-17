@@ -2,6 +2,7 @@
   "name": "quick-doc",
   "version": "0.1.0",
   "description": "Quickly generate HTML documentation for your JS.",
+  "repository": "https://github.com/ben-page/quick-doc.git",
   "main": "./lib/document.js",
   "bin": {
     "quickdoc": "bin/quickdoc"
@@ -9,14 +10,13 @@
   "author": "Ben Page <ben.page@openreign.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.3.1",
-    "commander": "^2.9.0",
-    "doctrine": "^1.2.0",
-    "dustjs-helpers": "^1.7.3",
-    "dustjs-linkedin": "^2.7.2",
-    "esprima": "^2.7.2",
-    "highlight.js": "^9.1.0",
-    "micromatch": "^2.3.7",
+    "commander": "^2.17.1",
+    "doctrine": "^2.1.0",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "^2.7.5",
+    "esprima": "^4.0.1",
+    "highlight.js": "^9.12.0",
+    "micromatch": "^3.1.10",
     "normalizecss": "^3.0.0"
   }
 }
