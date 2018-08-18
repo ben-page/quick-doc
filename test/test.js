@@ -7,12 +7,12 @@ var util = require('util');
         respect indention
  */
 /**
- * JSDOC comment
- * @param object
+ * test() function
+ * @param {object} param1 important value
  */
-function test(object) {
+function test(param1) {
     //line comment
-    console.log(util.inspect(object));
+    console.log(util.inspect(param1));
 
     for (var i = 0; i < 100 /* embedded block comment */; i++) {
         console.log(i); //embedded line comment
